@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db-progress-evento:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    container_name: db-postgress-evento
+    volumes:
+      - ./banco-de-dados-evento:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: pgroot
+      POSTGRES_PASSWORD: 12345678
+
+volumes:
+  banco-de-dados-evento:

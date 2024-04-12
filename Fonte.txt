@@ -1,0 +1,4 @@
+API Usando NodeJS, Prisma e Docker.
+Banco de dados será o PostgreSQL.
+
+https://www.youtube.com/watch?v=gnq8ZY85UUM
