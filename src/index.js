@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import routes from "./routes";
 
 dotenv.config()
 
@@ -13,7 +14,7 @@ app.use(cors())
 // Entender o formato JSON
 app.use(express.json())
 
-// require("../src/routes/index")(app);
+routes(app);
 
 app.listen(3001);
 console.log("Servidor iniciou")
